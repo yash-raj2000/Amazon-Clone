@@ -1,0 +1,447 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e2e0dd 0%, #ebcd5a 30%, #dee61d 100%);
+  
+}
+
+.navbar-one{
+    background-color: black;
+    height: 60px;
+    display: flex;
+}
+
+.navbar-one img{
+    height: 60px;
+    width: 110px;
+   margin-right: 25px;
+}
+
+.navbar-one img:hover{
+  cursor: pointer;
+}
+
+.address{
+
+    color: white;
+    font-size: 0.8rem;
+    margin-left:10px ;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.address > img{
+    height: 15px;
+    width: 20px;
+}
+
+.address:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#text1{
+    text-align: center;
+    font-weight:900;
+}
+
+#dropdown{
+    width: 50px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.searchbar{
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.searchbar > input{
+    width: 450px;
+}
+
+.searchbar > img{
+    width: 45px;
+    height: 40px;
+}
+
+.searchbar > img:hover{
+    cursor: pointer;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+  }
+.return > p:hover{
+  border: 1px solid white;
+  cursor: pointer;
+}
+  .dropbtn:hover{
+    cursor: pointer;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    /* display: block; */
+    text-align: center;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {border: 1px solid white;}
+
+  .sign{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .left{
+    display: flex;
+    float: left;
+    flex-direction: column;
+  }
+
+  .left > a{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .right{
+    display: flex;
+    float: right;
+    flex-direction: column;
+    margin-right: 90px;
+    margin-bottom: 20px;
+
+  }
+
+  .right > a{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .right > a:hover{
+    cursor: pointer;
+  }
+
+
+  .return{
+    color: white;
+    margin-left: 15px;
+    margin-top: 8px;
+  }
+
+  .return:hover{
+    cursor: pointer;
+  }
+
+  .cart{
+    height: 40px;
+    width: 30px;
+
+  }
+
+  .cart > p{
+    color: whitesmoke;
+    color: white;
+    margin-top: -27px;
+    margin-left: 91px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+  .cart:hover{
+    cursor: pointer;
+  }
+
+  .navbar2{
+    background-color: rgba(0, 0, 0, 0.797);
+    height: 40px;
+    display: flex;
+  }
+  .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    height: 40px;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 0;
+  }
+
+  .navbar2 > a{
+    padding: 4px;
+    font-size: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 13px;
+    margin-top: 5px;
+  }
+  .navbar2 > a:hover{
+    cursor: pointer;
+    border: 1px solid white;
+  }
+
+.container-boxes{
+  display: flex;
+  padding: 30px;
+ 
+}
+
+.box{
+  flex-direction: row;
+  background-color: whitesmoke;
+  height: 300px;
+  width: 280px;
+  margin: auto;
+}
+
+.box > img{
+  height: 215px;
+  width: 250px;
+  margin-left:14px;
+}
+.boxes{
+  display: flex;
+  /* margin-left: 14px; */
+ 
+}
+
+.items > a{
+  text-decoration: none;
+  margin-left: 14px;
+  font-size: 12px;
+}
+
+.foot{
+  height: 55px;
+  background-color: #37475A;
+}
+
+.foot > a{
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.footer{
+  background-color: #232F3E;
+  height: 250px;
+  display: flex;
+}
+
+.footer-boxes{
+  width: 250px;
+  height: 280px;
+  margin: auto;
+  margin-top: 10px;
+}
+.footer-boxes > a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.footer-boxes > a:hover{
+  text-decoration: underline;
+}
+
+.footer-boxes > h5{
+  color: white;
+  margin-left: 10px;
+}
+
+
+.footer2{
+  background-color: #232F3E;
+  height: 150px;
+  display: flex;
+}
+
+.boxx1{
+  height: 100px;
+  width: 180px;
+  margin-left: 500px;
+}
+.boxx2{
+  height: 100px;
+  width: 180px;
+}
+
+.boxx1 > img{
+  height:70px;
+  width:170px;
+}
+
+.countries{
+  background-color:#232F3E ;
+  height: 90px;
+}
+
+.name > a{
+  text-decoration: none;
+  padding: 4px;
+  color: white;
+  font-size: 13px;
+}
+
+.name > a:hover{
+  text-decoration: underline;
+}
+
+.footer-last{
+  background-color: #131A22;
+  height: 100px;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.footer-boxesLast{
+  height: 110px;
+  margin-top: 10px;
+  margin-left: 125px;
+}
+
+.footer-boxesLast > a{
+  display: block;
+  color: rgba(255, 255, 255, 0.783);
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 9px;
+}
+
+.footer-boxesLast > a:hover{
+  text-decoration: underline;
+}
+
+.footer-boxesLast > h6{
+  margin-left: 10px;
+}
+
+.end{
+  background-color: #131A22;
+  height: 60px;
+}
+
+.line1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line1 > a{
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 11px;
+}
+.line2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.line2 > p{
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 11px;
+  text-decoration: none;
+}
